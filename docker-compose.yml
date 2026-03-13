@@ -25,7 +25,7 @@ services:
     env_file:
       - .env
     ports:
-      - "8000:8000"
+      - "8001:8000"
 
   frontend:
     build:
@@ -36,7 +36,7 @@ services:
     depends_on:
       - backend
     ports:
-      - "3000:80"
+      - "8000:80"
 
 volumes:
   teda_pgdata:
